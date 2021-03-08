@@ -3,10 +3,11 @@
 
 
 header{
-      width: 100%;
+      max-width: 100%;
       height: 100vh;
       background-size: cover;
-	background-image: url("GettyImages-641757628-0b3c363.jpg");}
+      background-attachment: fixed;
+	background-image: url("GettyImages-641757628-0b3c363.jpg"); }
 
 .opacity { background-color:rgba(0, 0, 0, 0.4);
 height: 100vh; }
@@ -22,12 +23,12 @@ list-style-type: none;}
 .menu ul li a {text-decoration:none;
 color:white;
 text-transform: uppercase;
-}
+font-size: 10vm;}
 h1{color: white;
 text-align: center;
 ; margin-top: 2rem;
 text-transform:uppercase;
-font-size: 3rem;
+font-size: ;
 
 }
 h1:hover{}
@@ -52,3 +53,18 @@ color:white; padding-top: 12px;}
 
 h2 {color:white; text-align: center;padding-top:5%;
 opacity:0.3; font-size:10rem;}
+
+
+
+@media screen and (max-width: 600px) {
+ header {box-sizing: border-box;
+ 	background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+  }
+  .menu ul{margin-left: 50%;
+  	margin-right: 20%;
+  	padding-top: 2rem;}
+  h2{font-size: 3rem;}
+  h1{margin-top: 1rem;padding-top: 1.8rem;}
+}
